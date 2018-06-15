@@ -28,7 +28,7 @@
             <label class="search-label" for="search"></label>
           </form>
           <a href="#" class="input">Вход</a>
-          <a href="#" class="basket">Пусто</a>
+          <a href="#" class="basket basket-pay">2 товара</a>
 		</nav>
 		<div class="info-job">
 			<p class="mode">c 10 до 20, ежедневно</p>
@@ -37,7 +37,7 @@
 	</header>
 	<main>
 		<div class="breadcrumbs-list">
-           <a class="breadcrumbs-item" href="#">Главная</a>
+           <a class="breadcrumbs-item" href="index.html">Главная</a>
            <a class="breadcrumbs-item" href="#">Каталог</a>
            <a class="breadcrumbs-item">Сливочное</a>
         </div>
@@ -50,7 +50,9 @@
         		<span>Сортировка</span>
         		<select name="sort" id="" size="1">
         		    <option selected value="по популярности">по популярности</option>
-        		    <option value="по цене">по цене</option>
+        		    <option value="сначала недорогие">сначала недорогие</option>
+        		    <option value="сначала дорогие">сначала дорогие</option>
+        		    <option value="по жирности">по жирности</option>
         		</select>    
         		</div>
         		<fieldset class="filter-item">
@@ -152,4 +154,26 @@
               </div>
               <div class="logo"><img src="" alt=""></div>
         </footer>
+		<div class="basket-goods">
+				<table class="basket-info">
+					<tbody>
+					<tr class="basket-list">
+						<td><button class="basket-close-item" type="submit" value="удалить товар">Удалить товар</button></td>
+						<td><a href="#"><img src="" class="baske-item-image" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a></td>
+						<td class="basket-item-mass">1,5 кг х <span>200 руб.</span></td>
+                        <td class="basket-item-price">300 руб.</td>
+					</tr>
+					<tr class="basket-list">
+						<td><button class="basket-close-item" type="submit" value="удалить товар">Удалить товар</button></td>
+						<td><a href="#"><img src="" class="baske-item-image" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></a></td>
+						<td class="basket-item-mass">1,5 кг х <span>300 руб.</span></td>
+                        <td class="basket-item-price">450 руб.</td>
+					</tr>
+					</tbody>
+				</table>
+				<p class="basket-total">Итого: 750 руб.</p>
+				<button class="btn-basket-buy" type="submit" value="Оформить заказ">Оформить заказ</button>
+			</div>		
 	</main>
+</body>
+</html>
