@@ -1,0 +1,19 @@
+body
+{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: "Roboto",Tahoma,sans-serif;
+	border: 2px solid black;
+	color: white;
+}
+.cream {
+	background-image: url(../img/background1.jpg);
+}
+
+.visuallyhidden {
+	display: none;
+}
+
+ a {
+	color: #ffffff;
+}
