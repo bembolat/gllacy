@@ -8,11 +8,13 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="cream chocolate berry">
+<body>
+	<div class="cream chocolate berry">
 	<header class="main-header">
 		<h1 class="visuallyhidden">Онлайн магазин мороженного - Gllacy</h1>
 		<a href="#" class="logo-shop">
 		<img src="img/Logo.svg" width="157px" height="66px" alt="logo-shop"></a>
+		<div class="row">
 		<nav class="main-header">
 			<ul class="main-list">
 				<li class="main-list-item"><a href="catalog.html">Каталог</a>
@@ -25,7 +27,7 @@
 					</ul>
 				</li>
 				<li class="main-list-item"><a href="#">Доставка и оплата</a></li>
-				<li class="main-list-item"><a href="#">О компании</a></li>
+				<li class="main-list-item"><a href="#">О Компании</a></li>
 			</ul>
 			<form class="user-panel" method="get">
             <input type="search" name="search" id="search" placeholder="Что ищем?">
@@ -38,6 +40,7 @@
 			<p class="mode">c 10 до 20, ежедневно</p>
 			<p class="phone">8 812 450 25 25</p>
 		</div>
+	</div>
 	</header>
 	<main>
 		<div class="slider">
@@ -61,30 +64,30 @@
 			<section class="marketing1">
 				<h2>Малинка даром!</h2>
 				<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-				<a class="wantone">Хочу варенье!</a>
+				<a class="wantone" href="#">Хочу варенье!</a>
 			</section>
 			<section class="marketing2">
 				<h2>Шоколадки даром!</h2>
 				<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-				<a class="wanttwo">Хочу шоколадки!</a>
+				<a class="wanttwo" href="#">Хочу шоколадки!</a>
 			</section>
 		</div>
 		<div class="top">
 			<div class="hit hit1">
 				<span>310₽/кг</span>
-				<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 			</div>
 			<div class="hit hit2">
 				<span>380₽/кг</span>
-				<p>Сливочно-кофейнок с кусочками шоколада</p>
+				<p><a href="#">Сливочно-кофейный с кусочками шоколада</a></p>
 			</div>
 			<div class="hit hit3">
 				<span>355₽/кг</span>
-				<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+				<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
 			</div>
 			<div class="hit hit4">
 				<span>415₽/кг</span>
-				<p>Сливочноее крем-брюле с карамельной подливкой</p>
+				<p><a href="#">Сливочноее крем-брюле с карамельной подливкой</a></p>
 			</div>
 		</div>
 		<div class="infoshop">
@@ -94,30 +97,33 @@
 			<p class="shoptext">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 			<p class="shoptext">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 		</div>
+		<div class="container">
 		<div class="news">
 			<h2>Новое в нашем блоге</h2>
-			<h3>10 способов сервировки фруктовых щербетов к столу</h3>
+			<h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
 		</div>
 		<div class="distribution">
-			<h2 class="visuallyhidden"></h2>
+			<h2 class="visuallyhidden">Подписка на рассылку</h2>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 			<form class="distribution-email">
 			<input type="text" placeholder="Электронная почта">
 			<button class="btn-email" type="submit">Отправить</button>
 			</form>
 		</div>
+		</div>
 		<div class="wrapper-map">
                 <object
                 type="image/svg+xml"
                 data="img/map.svg">
                 <img
-                  src="img/map.png" alt="map">
+                  src="img/map.jpg" alt="map">
               </object>
               <section class="contacts">
                 <h2>Адрес главного офиса и офлайн -магазина:</h2>
                 <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                  <p>Для заказов по телефону: 8 (812) 275-75-75 (с 10 до 20 ежедневно)</p>
-                  <a  class="link-connect" href="">Форма обратной связи</a>
+                  <p class="phone-text">Для заказов по телефону: 
+                  	<br><span>8 (812) 275-75-75</span><br>(с 10 до 20 ежедневно)</p>
+                  <a  class="link-connect" href="#">Форма обратной связи</a>
               </section>
             </div>
               <footer>
@@ -133,7 +139,7 @@
               	<a href="#">О производстве</a>
               	<a href="#">Экологические стандарты</a>
               </div>
-              <div class="logo"><img src="" alt=""></div>
+              <div class="logo"><img src="img/Logo.svg" alt=""></div>
             </footer>
             <div class="modal-login">
             <button class="close-login" type="button"></button>
@@ -147,5 +153,6 @@
             </form>
           </div>
 	</main>
+</div>
 </body>
 </html>
