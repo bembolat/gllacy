@@ -454,6 +454,7 @@ ul {
 
 footer {
 	display: flex;
+<<<<<<< HEAD
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 34px 26px 30px 26px;
@@ -481,3 +482,7 @@ footer {
 
 	align-self: center;
 }
+=======
+}
+
+>>>>>>> 949b9686fe575d900f2186c01112381631cacfad
