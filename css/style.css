@@ -62,6 +62,7 @@ ul {
 
 .main-header {
 	display: flex;
+	position: relative;
 }
 
 .main-list {
@@ -454,7 +455,6 @@ ul {
 
 footer {
 	display: flex;
-<<<<<<< HEAD
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 34px 26px 30px 26px;
@@ -464,7 +464,8 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	width: 330px;
-	align-items: flex-start;	
+	align-items: flex-start;
+	
 }
 
 .info-footer a {
@@ -478,11 +479,128 @@ footer {
 .info-footer .bold {
 	font-weight: 700;
 }
-.logo {
 
+.logo {
 	align-self: center;
 }
-=======
+
+.modal-login {
+	width: 278px;
+	min-height: 230px;
+	background-color: #f8f7f4;
+	border-radius: 10px;
+	position: absolute;
+	top: 57%;
+	right: 12%;
 }
 
->>>>>>> 949b9686fe575d900f2186c01112381631cacfad
+.reg-links {
+	margin-top: 20px;
+	margin-left: 18px;
+}
+
+.reg-links a {
+	display: inline;
+	color: #323232;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.form-login {
+	width: 242px;
+	margin: 0 auto;
+}
+
+.form-login input {
+width: 242px;
+padding: 10px 14px;
+border: 1px solid rgba(178,178,178,.52);
+margin-top: 20px;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+.inter-login {
+	float: left;
+	font-size: 18px;
+	margin-right: 20px;
+	line-height: 24px;
+	color: #fefefe;
+	background-image: linear-gradient(to top,#ca3824 0%,#f26843 100%);
+	box-shadow: 0 2px 2px rgba(85,8,0,.54);
+	cursor: pointer;
+	border-radius: 25px;
+	padding: 10px 25px;
+	margin-top: 20px;
+	border: none;
+}
+
+.feedback {
+	position: fixed;
+	top: 5%;
+	left: 35%;
+	z-index: 50;
+	width: 460px;
+	background-color: #f8f7f4;
+	padding: 25px;
+	border-radius: 10px;
+	min-height: 410px;
+}
+
+.feedback h2 {
+	margin: 0;
+	margin-bottom: 23px;
+	color: #323232;
+	font-size: 24px;	
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.form-answer {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-answer input {
+	padding: 15px;
+	width: 266px;
+	border-radius: 5px;
+	border:1px solid rgba(178,178,178,.52);
+	margin-bottom: 20px;
+}
+
+textarea {
+	width: 426px;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.btn {
+	float: right;
+	font-size: 18px;
+	margin-right: 20px;
+	line-height: 24px;
+	color: #fefefe;
+	background-image: linear-gradient(to top,#ca3824 0%,#f26843 100%);
+	box-shadow: 0 2px 2px rgba(85,8,0,.54);
+	cursor: pointer;
+	border-radius: 25px;
+	padding: 10px 25px;
+	margin-top: 25px;
+	border: none;
+}
+
+.button-close {
+	display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: none;
+    background: url(../img/close.png) no-repeat;
+    outline: none;
+}
