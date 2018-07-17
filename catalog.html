@@ -27,28 +27,42 @@
 				<li class="main-list-item"><a href="#">Доставка и оплата</a></li>
 				<li class="main-list-item"><a href="#">О компании</a></li>
 			</ul>
+			<button class="search-button"></button>
+			<div class="search-form">
 			<form class="user-panel" method="get">
             <input type="search" name="search" id="search" placeholder="Что ищем?">
             <label class="search-label" for="search"></label>
-          </form>
+            </form>
+      		</div>
           <a href="#" class="input">Вход</a>
           <div class="basket-contaier">
           <a href="#" class="basket basket-pay">2 товара</a>
           <div class="basket-goods">
 				<table class="basket-info">
 					<tbody>
-					<tr class="basket-list">
-						<td><button class="basket-close-item" type="submit" value="удалить товар">Удалить товар</button></td>
-						<td><a href="#"><img src="img/goods1.png" class="basket-item-image" width="33" height="33" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a></td>
-						<td class="basket-item-mass">1,5 кг х <span>200 руб.</span></td>
-                        <td class="basket-item-price">300 руб.</td>
-					</tr>
-					<tr class="basket-list">
-						<td><button class="basket-close-item" type="submit" value="удалить товар">Удалить товар</button></td>
-						<td><a href="#"><img src="img/goods2.png" class="basket-item-image" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-						<td class="basket-item-mass">1,5 кг х <span>300 руб.</span></td>
-                        <td class="basket-item-price">450 руб.</td>
-					</tr>
+                    <tr class="class-item-size">
+                      <td>
+                        <button class="basket-close-item" type="submit" value="удалить товар">Удалить товар</button>
+                      </td>
+                      <td>
+                        <a href="#"><img src="img/goods1.png" class="cart-item-image" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a>
+                      </td>
+                      <td><a href="#">Пломбир с апельсиновым джемом</a></td>
+                      <td class="item-no-wrap">1,5 кг х <span>200 руб.</span></td>
+                      <td class="item-no-wrap">300 руб.</td>
+                    </tr>
+                    <tr class="class-item-size">
+                      <td>
+                        <button class="basket-close-item" type="submit" value="удалить товар">Удалить товар</button>
+                      </td>
+                      <td>
+                        <a href="#"><img src="img/goods2.png" class="cart-item-image" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></a>
+                      </td>
+                      <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                      <td>1,5 кг х <span>300 руб.</span></td>
+                      <td>450 руб.</td>
+                    </tr>
+                  </tbody>
 					</tbody>
 				</table>
 				<p class="basket-total">Итого: 750 руб.</p>
@@ -62,7 +76,7 @@
 		</div>
 	</div>
 	</header>
-	<main>
+	<main class="catalog-main">
 		<div class="breadcrumbs-list">
            <a class="breadcrumbs-item" href="index.html">Главная »</a>
            <a class="breadcrumbs-item" href="#">Каталог »</a>
@@ -98,20 +112,20 @@
                 <fieldset class="fatness">
                 		<legend>Жирность:</legend>
                 		<ul class="fatness-list">
-                			<li><input type="radio" id="rd1" name="fatness"><label for="rd1*">0%</label></li>
-                			<li><input type="radio" id="rd2" name="fatness"><label for="rd2*">до 10%</label></li>
-                			<li><input type="radio" id="rd3" name="fatness"><label for="rd3*">до 30%</label></li>
-                			<li><input type="radio" id="rd4" name="fatness"><label for="rd4*">выше 30%</label></li>
+                			<li><input type="radio" id="rd1" name="fatness" disabled><label for="rd1">0%</label></li>
+                			<li><input type="radio" id="rd2" name="fatness" checked><label for="rd2">до 10%</label></li>
+                			<li><input type="radio" id="rd3" name="fatness"><label for="rd3">до 30%</label></li>
+                			<li><input type="radio" id="rd4" name="fatness"><label for="rd4">выше 30%</label></li>
                 		</ul>
                 	</fieldset>	
                 <fieldset class="filles">
                 	<legend>Наполнители:</legend>
                 	<ul class="filles-list">
-                		<li><input type="checkbox" id="ch1" name="filles"><label for="ch1*">шоколадные</label></li>
-                		<li><input type="checkbox" id="ch2" name="filles"><label for="ch2*">сахарные присыпки</label></li>
-                		<li><input type="checkbox" id="ch3" name="filles"><label for="ch3*">фрукты</label></li>
-                		<li><input type="checkbox" id="ch4" name="filles"><label for="ch4*">сиропы</label></li>
-                		<li><input type="checkbox" id="ch5" name="filles"><label for="ch5*">джемы</label></li>
+                		<li><input type="checkbox" id="ch1" name="filles" checked><label for="ch1">шоколадные</label></li>
+                		<li><input type="checkbox" id="ch2" name="filles"><label for="ch2">сахарные присыпки</label></li>
+                		<li><input type="checkbox" id="ch3" name="filles"><label for="ch3">фрукты</label></li>
+                		<li><input type="checkbox" id="ch4" name="filles"><label for="ch4">сиропы</label></li>
+                		<li><input type="checkbox" id="ch5" name="filles"><label for="ch5">джемы</label></li>
                 	</ul>
                 </fieldset>
                 <button class="btn-filter" type="sumbit">Применить</button>

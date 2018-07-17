@@ -51,6 +51,9 @@ main {
     padding: 0;
 }
 
+.catalog-main {
+	margin: 0 27px;
+}
 h1 {
     margin: 0;
     padding: 0;
@@ -69,6 +72,7 @@ ul {
 	display: flex;
 	margin: 0;
 	padding-top: 9px;
+	padding-left: 10px;
 }
 
 .main-list a {
@@ -93,8 +97,20 @@ ul {
 	margin-left: 27px;
 }
 
-[type="search"] {
-	display: none;
+input[type="search"] {
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding: 10px 14px;
+	overflow: hidden;
+	width: 310px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	white-space: nowrap;
+	border: 1px solid rgba(178,178,178,.52);
+	border-radius: 5px;
+	box-shadow: none;
 }
 
 .input {
@@ -105,6 +121,11 @@ ul {
 	/* text-align: center; */
 }
 
+.input:hover, .basket:hover {
+	background-color: #f8f7f4;
+	color: #000;
+}
+
 .basket {
 	display: block;
 	min-width: 53px;
@@ -113,26 +134,49 @@ ul {
 	/* text-align: center; */
 	margin-left: 8px;
 }
-.search-label {
-    position: absolute;
-    top: 9px;
-    left: 10px;
-    z-index: 20;
-    width: 20px;
-    height: 20px;
-    background: url(../img/search.png) no-repeat;
-    cursor: pointer;
-}
 
-.user-panel {
-	display: block;
+.search-button {
+	border: none;
 	position: relative;
+	cursor: pointer;
 	width: 36px;
 	height: 36px;
 	background-color: rgba(255,255,255,0.2);
 	border-radius: 50%;
-	margin-left: 317px;
+	margin-left: 346px;
 	margin-right: 10px;
+}
+
+.search-form {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 215px;
+	z-index: 20;
+	width: 341px;
+	min-height: 84px;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	box-shadow: 0 20px 20px rgba(0,0,0,.4);
+}
+
+.search-button:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-image: url(..//img//sprite.png);
+	background-position: 0px -163px;
+	width: 17px;
+	height: 17px;
+}
+
+.search-button:hover {
+	background-color: #f8f7f4;
+}
+
+.search-button:hover::before {
+	background-position: -168px -143px;
 }
 
 .mode {
@@ -149,12 +193,41 @@ ul {
 }
 
 .input, .basket {
+	position: relative;
 	font-weight: 500;
 	padding: 8px 8px 8px 45px;
 	display: block;
 	font-size: 14px;
 	line-height: 16px;
 	/* text-align: right; */
+}
+
+.input:before {
+	content: "";
+	position: absolute;
+	background: url(../img//sprite.png) no-repeat;
+	background-position: -126px -143px;
+	width: 21px;
+	height: 19px;
+	left: 15px;
+}
+
+.input:hover::before {
+	background-position: -146px -143px;
+}
+
+.basket:before, basket-pay:before {
+	content: "";
+	position: absolute;
+	background: url(../img//sprite.png) no-repeat;
+	background-position: -24px -143px;
+	width: 21px;
+	height: 20px;
+	left: 15px;
+}
+
+.basket-pay:before, .basket:hover::before {
+	background-position: -45px -143px;
 }
 
 .catalog-list {
@@ -336,7 +409,36 @@ ul {
 
 .shoptext {
 	width: 485px;
+	font-weight: 400;
+	position: relative;
 	margin-left: 85px;
+}
+
+.shoptext:before {
+	background-image: url(..//img//sprite.png);
+	left: -60px;
+    top: -15px;
+    content: "";
+	position: absolute;
+	width: 49px;
+    height: 49px;
+}
+
+.text-icecream:before {
+    background-position: -61px 0;
+         
+}
+
+.text-cow:before {
+	background-position: -49px -61px;
+}
+
+.text-leaf:before {
+	background-position: 0px -61px;
+}
+
+.text-thermometer:before {
+	background-position: -110px 0px;
 }
 
 .container {
@@ -460,17 +562,23 @@ footer {
 	padding: 34px 26px 30px 26px;
 }
 
+.catalog-main footer {
+	border-top: 1px solid #a9bbb1;
+	padding: 34px 0 30px 0;
+}
+
 .info-footer {
 	display: flex;
 	flex-wrap: wrap;
 	width: 330px;
-	align-items: flex-start;
-	
+	/* align-items: center; */
+	align-self: flex-start;
 }
 
 .info-footer a {
 	font-size: 13px;
 	line-height: 18px;
+	vertical-align: top;
 	font-weight: 400;
 	margin-left: 30px;
 	border-bottom: 1px solid rgb(172, 194, 182);
@@ -478,8 +586,18 @@ footer {
 
 .info-footer .bold {
 	font-weight: 700;
+	position: relative;
 }
 
+.info-footer .bold:before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 13px;
+	background: url(..//img//heart.png) no-repeat;
+	left: -22px;
+	bottom: 3px;
+}
 .logo {
 	align-self: center;
 }
@@ -567,6 +685,7 @@ box-sizing: border-box;
 	flex-direction: column;
 }
 
+
 .form-answer input {
 	padding: 15px;
 	width: 266px;
@@ -631,7 +750,7 @@ textarea {
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	width: 864px;
+	width: 884px;
 }
 
 .sort {
@@ -661,18 +780,23 @@ textarea {
 
  select {
 	height: 36px;
-    padding: 0 35px 0 15px;
-    font-size: 16px;
-    line-height: 36px;
-    color: #fff;
-    background: rgba(255,255,255,.2);
-    border: none;
-    border-radius: 18px;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+	padding: 0 35px 0 15px;
+	font-size: 16px;
+	line-height: 36px;
+	color: #fff;
+	background: rgba(255,255,255,.2) url(..//img//icon-down-dir.png) no-repeat 170px 50%;
+	border: none;
+	border-radius: 18px;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 
+ select:hover {
+ 	background: #fff url(..//img//icon-down-dir-black.png) no-repeat 170px 50%;
+ 	color: #000;
+ }
+ 
 .form-filter option {
 	color: #323232;
 }
@@ -693,11 +817,7 @@ textarea {
 	height: 36px;
 }
 .fatness-list li, .filles-list li {
-	padding-left: 56px;
-}
-
-input {
-display: none;
+	padding-left: 30px;
 }
 
 .fatness-list li:first-child, .filles-list li:first-child {
@@ -717,6 +837,8 @@ display: none;
 
 .form-filter label {
 	font-weight: 500;
+	position: relative;
+	margin-left: 30px;
 }
 
 .range-controls {
@@ -800,6 +922,7 @@ display: none;
 }
 
 .basket-goods {
+	display: none;
 	width: 540px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
@@ -811,23 +934,48 @@ display: none;
 	top: 50px;
 	right: 0px;
 	padding: 15px 15px 20px;
+	box-sizing: border-box;
 }
 
-.basket-list a {
-	vertical-align: baseline;
-	color: #323232;
-	font-size: 13px;
-	line-height: 16px;
-	font-weight: 400;
+.basket-info a {
+	color: #000;
+}
+
+.basket-info img {
+	margin-right: 5px;
+}
+
+.class-item-size td:nth-child(3) {
+    width: 230px;
+    padding-right: 10px;
+}
+
+.basket-info td {
+    padding-bottom: 15px;
+}
+
+.basket-info {
+    width: 100%;
+    border-bottom: 1px solid #cacac7;
+}
+
+.basket-info span {
+    color: #999;
 }
 
 .basket-close-item {
 	font-size: 0;
+	background: url(..//img//delete.png) no-repeat;
+	border: none;
+	vertical-align: top;
+	width: 11px;
+	height: 11px;
+	margin-right: 10px;
 }
 
 .basket-list td:nth-child(2) {
-	width: 235px;
-    padding-right: 10px;
+	width: 287px;
+	padding-right: 10px;
 }
 
 .basket-total {
@@ -868,4 +1016,122 @@ display: none;
 	font-weight: 400;
 	line-height: 26px;
 	margin-left :20px;
+}
+
+.social {
+	align-self: end;
+}
+
+
+.social-btn {
+	overflow: hidden;
+	width:32px;
+	height: 32px;
+	display: inline-block;
+	text-indent: 100%;
+	background: url(..//img//sprite.png) no-repeat;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(255,255,255,.6), inset 0 0 0 1px rgba(255,255,255,.6);
+	opacity: .8;
+	margin-right: 15px;
+}
+
+.twit {
+	background-position: -97px -110px;
+}
+
+.vk {
+	background-position: -159px 0;
+}
+
+.fb {
+	background-position: -65px -110px;
+}
+
+.inst {
+	background-position: -33px -110px;
+}
+
+.social-btn:hover {
+	opacity: 1;
+}
+
+.social-btn:active {
+	box-shadow: 0 0 0 3px rgba(255,255,255,1), inset 0 0 0 1px rgba(255,255,255,1);
+}
+
+.search-button:hover+.search-form {
+	display:block;
+}
+
+input[type=radio], input[type=checkbox] {
+	display: none;
+}
+
+.fatness-list label::before,
+.filles-list label::before {
+	position: absolute;
+	content: "";
+    background: url(..//img//sprite.png) no-repeat;
+    right: 8px;
+    top: 0;
+    margin-right: 100%;
+}
+
+.fatness-list label::before {
+	width: 23px;
+	height: 23px;
+	background-position: -158px -76px;
+}
+
+.fatness-list input[type=radio]:checked+label::before {
+	background-position: -158px -54px;
+}
+
+.fatness-list input[type=radio]+label:hover::before {
+	background-position: -110px -82px;
+}
+
+.fatness-list input[type=radio][disabled]+label:hover::before {
+	background-position: -158px -32px;
+}
+
+.fatness-list input[type=radio]:checked+label:hover::before {
+	background-position: -158px -120px;
+}
+
+.fatness-list input[type=radio][disabled]:checked+label:hover::before {
+	background-position: -159px -98px;
+}
+
+.filles-list label::before {
+	width: 21px;
+    height: 21px;
+    background-position: -105px -143px;
+}
+
+.filles-list input[type=checkbox][disabled]+label:hover::before {
+	background-position: -86px -143px;
+}
+
+.filles-list input[type=checkbox]+label:hover::before {
+	background-position: -66px -143px;
+}
+
+.filles-list input[type=checkbox][disabled]:checked+label:hover::before {
+	background-position: -132 -82px;
+}
+
+.filles-list input[type=checkbox][disabled]+label:hover::before {
+	background-position: -86px -143px;
+}
+
+.filles-list input[type=checkbox]:checked+label:hover::before {
+	background-position: -0px -143px;
+	width: 22px;
+}
+
+.filles-list input[type=checkbox]:checked+label::before {
+	background-position: -129px -110px;
+	width: 22px;
 }

@@ -1,0 +1,66 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-logo-html {
+  background-image: url(sprite.png);
+  background-position: -1080px -500px;
+  width: 199px;
+  height: 68px;
+}
+.icon-logo-mishka {
+  background-image: url(sprite.png);
+  background-position: -1080px -416px;
+  width: 173px;
+  height: 84px;
+}
+.icon-logo-pink {
+  background-image: url(sprite.png);
+  background-position: -1080px -568px;
+  width: 185px;
+  height: 52px;
+}
+.icon-map {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 1440px;
+  height: 416px;
+}
+.icon-mishka {
+  background-image: url(sprite.png);
+  background-position: 0px -416px;
+  width: 360px;
+  height: 576px;
+}
+.icon-nerds-illustration {
+  background-image: url(sprite.png);
+  background-position: -720px -416px;
+  width: 360px;
+  height: 208px;
+}
+.icon-nerds-logo {
+  background-image: url(sprite.png);
+  background-position: -1253px -416px;
+  width: 160px;
+  height: 65px;
+}
+.icon-pink {
+  background-image: url(sprite.png);
+  background-position: -360px -416px;
+  width: 360px;
+  height: 576px;
+}
