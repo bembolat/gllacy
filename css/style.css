@@ -771,7 +771,7 @@ footer {
 	border-radius: 10px;
 	position: absolute;
 	z-index: 20;
-	top: 96%;
+	top: 41px;
 	right: 12%;
 }
 
@@ -1433,7 +1433,7 @@ input[type=radio], input[type=checkbox] {
 }
 
 .wrapper-login {
-	padding-bottom: 5px;
+	padding-bottom: 7px;
 }
 
 .modal-show {
