@@ -21,6 +21,7 @@ body {
 	background-position: top center;
 	z-index: 150;
 	background-color: #8996a6;
+	transition: background-image 1s;
 }
 
 button:focus, button {
@@ -33,6 +34,7 @@ button:focus, button {
 	background-position: top center;
 	z-index: 150;
 	background-color: #9d8b84;
+	transition: background-image 1s;
 }
 
 .cream {
@@ -41,6 +43,7 @@ button:focus, button {
 	background-position: top center;
 	z-index: 150;
 	background-color: #849d8f;
+	transition: background-image 1s;
 }
 
 .visuallyhidden {
